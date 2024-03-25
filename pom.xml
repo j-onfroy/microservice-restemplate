@@ -12,6 +12,10 @@
   <modules>
     <module>customer</module>
     <module>fraud</module>
+    <module>eureke-server</module>
+      <module>notification</module>
+      <module>employe-service</module>
+      <module>address-service</module>
   </modules>
 
   <name>microservice</name>

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/address
+    password: 1
+    username: postgres
+
+  application:
+    name: employee-service
+server:
+  port: 8080
+  servlet:
+    context-path: /employee-service
+
