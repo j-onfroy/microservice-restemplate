@@ -10,3 +10,8 @@ server:
   port: 8089
   servlet:
     context-path: /address-service
+feign:
+  client:
+    config:
+      address-service:
+        connect-timeout: 5000

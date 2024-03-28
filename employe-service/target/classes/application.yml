@@ -11,3 +11,9 @@ server:
   servlet:
     context-path: /employee-service
 
+feign:
+  client:
+    config:
+      employee-service:
+        connect-timeout: 5000
+

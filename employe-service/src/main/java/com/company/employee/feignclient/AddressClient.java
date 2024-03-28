@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "address-service",path = "/address-service",url = "localhost:8089/employee-service/employee/")
+@FeignClient(name = "address-service",path = "/address-service",url = "localhost:8089")
 @LoadBalancerClient(name = "address-service")
 public interface AddressClient {
     @GetMapping("/address/{id}")

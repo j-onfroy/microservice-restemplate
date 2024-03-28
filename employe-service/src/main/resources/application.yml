@@ -11,3 +11,22 @@ server:
   servlet:
     context-path: /employee-service
 
+feign:
+  client:
+    config:
+      employee-service:
+        connect-timeout: 5000
+
+message:
+  queue:
+    "employee-queue"
+  exchange:
+    "employee-exchange"
+  routingKey:
+    "employee-routingKey"
+  shipping:
+    "employee-shipping"
+  message_only_shipping:
+    "for-only-shipping"
+
+
